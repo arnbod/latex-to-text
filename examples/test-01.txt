@@ -1,0 +1,38 @@
+
+% Original (français)
+
+€3€
+
+€4€
+
+€0€
+
+€11€
+
+€12€
+
+€13€
+
+\begin{activite}[Utiliser des fonctions]
+
+\objectifs{Objectifs : utiliser des fonctions de \Python{} et du module \ci{math}.}
+
+\begin{enumerate}
+  \item  La fonction \Python{} pour le pgcd est \ci{gcd(a,b)}\index{gcd@\ci{gcd}}\index{pgcd} (sans le \og{}p\fg{}, pour \emph{greatest common divisor}). Calcule le pgcd de €5€ et €6€. Déduis-en le ppcm\index{ppcm} de €7€ et €8€. La fonction ppcm n'existe pas, tu dois utiliser la formule :
+  €1€
+  
+  \item Trouve par tâtonnement un nombre réel €9€ qui vérifie toutes les conditions suivantes (plusieurs solutions sont possibles) :
+  \begin{itemize}
+    \item \ci{abs(x**2 - 15)} est inférieur à \ci{0.5}
+    \item \ci{round(2*x)} renvoie \ci{8}
+    \item \ci{floor(3*x)} renvoie \ci{11}
+    \item \ci{ceil(4*x)} renvoie \ci{16} 
+  \end{itemize}
+ 
+  \emph{Indication.} \ci{abs()}\index{abs@\ci{abs}}\index{valeur absolue} désigne la fonction valeur absolue.
+  
+  \item Tu connais la formule de trigonométrie 
+  €2€
+  Vérifie que pour €10€ (ou d'autres valeurs) cette formule est numériquement vraie. (Ce n'est pas une preuve de la formule, car \Python{} ne fait que des calculs approchés du sinus et du cosinus).
+\end{enumerate}  
+\end{activite}

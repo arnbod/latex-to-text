@@ -1,0 +1,462 @@
+€259€
+€258€
+
+€154€
+
+
+%====================================================================
+€260€{Premiers pas}
+%====================================================================
+
+
+€261€{Lance-toi dans la programmation ! Dans cette toute première activité, tu vas apprendre à manipuler des nombres, des variables et tu vas coder tes premières boucles avec €262€.}
+
+
+€263€{9M9yz8bFzuU}{Premiers pas - partie 1 - Lance-toi !}
+
+€264€{9h9nLLRRjls}{Premiers pas - partie 2 - Variable}
+
+€265€{WLTNpIdHIls}{Premiers pas - partie 3 - Fonctions}
+
+€266€{zxf7QRfZato}{Premiers pas - partie 4 - Boucle pour}
+
+€267€{IS117_uXZKE}{Installer Python}
+
+€268€{QtUxL52VPtA}{Démarrer Python et utiliser IDLE}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€155€[Nombres avec €269€]
+
+Vérifie dans la console que €270€{} fonctionne correctement, en tapant les commandes suivantes dans une console €271€{} :
+€137€
+
+Voici quelques instructions.
+€156€
+  €272€ €273€{Addition.} €274€{5+7}.
+  €275€ €276€{Multiplication.} 
+  €277€{6*7} ; avec des parenthèses €278€{3*(12+5)} ; avec des nombres à virgule €279€{3*1.5}.
+  €280€ €281€{Puissance.}€282€{puissance}€283€{**@€284€{**}} €285€{3**2} pour €13€ ; puissance négative €286€{10**-3} pour €14€.
+  €287€ €288€{Division réelle.} €289€{14/4} vaut €290€{3.5} ; €291€{1/3} vaut €292€{0.3333333333333333}.
+  €293€ €294€{Division entière€295€{division euclidienne} et modulo€296€{modulo}€297€{reste}.}
+  €157€
+    €298€ €299€{14//4} vaut €300€{3} : c'est le quotient de la division euclidienne de €15€ par €16€, note bien la double barre ;
+    €301€ €302€{14\%4} vaut €303€{2} : c'est le reste de la division euclidienne de €17€ par €18€, on dit aussi €304€{}€19€ modulo €20€€305€.
+  €206€
+€207€
+
+€306€{Remarque.} Dans tout ce cours, on écrira les €307€{}nombres à virgule€308€{} sous la forme €21€ (et pas €22€). Le séparateur décimal est donc le point. En informatique les nombres à virgule sont appelés €309€{}nombres flottants€310€{}€311€{nombre flottant}.
+€208€
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activité 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€158€[Premiers pas]
+
+€312€{Objectifs : faire tes premiers calculs avec €313€.}
+
+€159€
+  €314€ Combien y a-t-il de secondes en un siècle ? (Ne tiens pas compte des années bissextiles.)
+  
+  €315€ Jusqu'où faut-il compléter les pointillés pour obtenir un nombre plus grand qu'un milliard ?
+  €0€
+  
+  €316€ Quels sont les trois derniers chiffres de 
+  €1€
+  
+  €317€ €23€ est le premier entier tel que son inverse a une écriture décimale périodique de longueur €24€ :
+  €2€ Trouve le premier entier dont l'inverse a une écriture décimale périodique de longueur €25€ :
+  €3€
+  
+  €318€{Indication.} L'entier est plus grand que €26€ !
+  
+  €319€ Trouve l'unique entier :
+  €160€
+    €320€ qui donne un quotient de €27€ lorsque l'on effectue sa division (euclidienne) par €28€,
+    €321€ et qui donne un quotient de €29€ lorsque l'on effectue sa division (euclidienne) par €30€,
+    €322€ et qui donne un reste égal à €31€ modulo €32€ !
+  €209€
+    
+€210€
+
+€211€
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€161€[Travailler avec un éditeur]
+À partir de maintenant, il est préférable que tu travailles dans un éditeur de texte dédié à €323€. Tu dois alors explicitement demander d'afficher€324€{print@€325€{print}} le résultat :
+€138€
+
+%Dans la suite tu continues d'écrire ton code dans l'éditeur mais on n'indiquera plus qu'il faut utiliser €326€{print()} pour afficher les résultats.
+€212€
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€162€[Variables]
+
+
+€327€{Variable.} 
+Une €328€{variable}€329€{variable} est un nom associé à un emplacement de la mémoire. C'est comme une boîte que l'on identifie par une étiquette.
+La commande €330€{}€331€{a = 3}€332€{}€333€{=@€334€{=}}€335€{affectation} signifie que j'ai une variable €336€{}€337€{a}€338€{} associée à la valeur €33€. 
+
+Voici un premier exemple :
+€139€
+
+
+€339€
+
+€340€{Commentaires.}
+€341€{\#@\#}
+€342€{commentaire}
+Tout texte qui suit le caractère dièse €343€{}\#€344€{} n'est pas exécuté par €345€{} mais sert à expliquer le programme. C'est une bonne habitude de commenter abondamment ton code.
+
+ 
+€346€
+
+€347€{Noms.} 
+Il est très important de donner un nom clair et précis aux variables. Par exemple, avec les noms bien choisis tu devrais savoir ce que calcule le code suivant :
+€140€
+
+Attention ! €348€{} distingue les majuscules des minuscules. Donc €349€{mavariable}, €350€{Mavariable} et €351€{MAVARIABLE} sont des variables différentes.
+
+€352€
+
+€353€{Réaffectation.}€354€{affectation} Imaginons que tu veuilles tenir tes comptes journaliers. Tu pars d'une somme €34€, le lendemain tu gagnes €35€, donc maintenant €36€ ; le jour d'après tu rajoutes €37€, donc €38€ ; puis tu perds €39€, donc au troisième jour €40€. Avec €355€{} tu peux n'utiliser qu'une seule variable €356€{S} pour toutes ces opérations.
+
+€141€
+Il faut comprendre l'instruction €357€{}€358€{S = S + 100}€359€{} comme ceci : €360€{}je prends le contenu de la boîte €361€{S}, je rajoute €41€, je remets tout dans la même boîte€362€{}.
+€213€
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activité 2
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€163€[Variables]
+
+€363€{Objectifs : utiliser des variables !}
+
+€164€
+  €364€ 
+  €165€
+    €365€   Définis des variables, puis calcule l'aire d'un trapèze. 
+  Ton programme doit afficher €366€{"L'aire vaut ..."} en utilisant €367€{print("L'aire vaut",aire)}.
+
+€368€{0.9}{
+  €369€{fig-trapeze}
+}  
+
+    
+    €370€ Définis des variables pour calculer le volume d'une boîte (un parallélépipède rectangle) dont les dimensions sont €42€, €43€, €44€.
+    
+    €371€ Définis une variable €372€{PI} qui vaut €45€. Définis un rayon €46€. Écris la formule de l'aire du disque de rayon €47€.
+
+€214€    
+
+  
+  €373€ Remets les lignes dans l'ordre de sorte qu'à la fin €48€ ait la valeur €49€.
+€166€
+€167€{0.5€374€}
+€142€
+€215€
+€216€  
+  
+  €375€ Tu places la somme de €50€ euros sur un compte d'épargne. Chaque année les intérêts sur l'argent placé rapportent €51€ (le capital est donc multiplié par €52€).
+  Écris le code qui permet de calculer le capital pour les trois premières années.
+
+
+  €376€ Je définis deux variables par €377€{a = 9} et €378€{b = 11}. Je souhaite échanger le contenu de €379€{a} et €380€{b}. Quelles instructions conviennent de sorte qu'à la fin €381€{a} vaut €53€ et €382€{b} vaut €54€ ?
+  
+€168€
+€169€{0.2€383€}
+€143€
+€217€
+€170€{0.2€384€}
+€144€
+€218€
+€171€{0.2€385€}
+€145€
+€219€
+€172€{0.2€386€}
+€146€
+€220€
+
+€221€ 
+ 
+€222€  
+€223€
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€173€[Utiliser des fonctions]
+€387€
+€174€
+  €388€ €389€{Utiliser des fonctions de €390€.}
+  
+  Tu connais déjà la fonction €391€{print()} qui affiche une chaîne de caractères (ou des nombres). Elle s'utilise ainsi €392€{print("Coucou")} ou bien à travers une valeur : 
+€175€
+€176€{0.5€393€}
+€147€
+€224€
+€225€ 	 
+
+  Il existe plein d'autres fonctions. Par exemple la fonction €394€{abs()} calcule la valeur absolue : €395€{abs(-3)} renvoie €396€{3}, €397€{abs(5)} renvoie €398€{5}.
+ % Autre exemple : €399€{float()} transforme une chaîne de caractères en un nombre : €400€{float("+1.234567")} renvoie le nombre flottant €401€{1.234567}.
+
+  €402€ €403€{Le module €404€{math}.}
+
+	Toutes les fonctions ne sont pas directement accessibles. Elles sont souvent regroupées dans des €405€{modules}€406€{module}. Par exemple le module €407€{math}€408€{math@€409€{math}}€410€{module!math@€411€{math}} contient les fonctions mathématiques. Tu y trouves par exemple la fonction racine carrée €412€{sqrt()}€413€{sqrt@€414€{sqrt}}€415€{racine carree@racine carrée} (€416€{square root}). Voici comment l'utiliser : 
+€177€
+€178€{0.5€417€}
+€148€
+€226€
+
+€227€ 	
+
+La première ligne importe toutes les fonctions du module €418€{math}€419€{import@€420€{import}}, la seconde calcule €55€ (en valeur approchée) et ensuite on affiche €56€ et €57€.	
+  €421€ €422€{Sinus et cosinus.} 
+  
+  Le module €423€{math} contient les fonctions trigonométriques sinus€424€{sin@€425€{sin}} et cosinus€426€{cos@€427€{cos}} et même la constante €428€{pi}€429€{pi@€430€{pi}}€431€{€58€} qui est une valeur approchée de €59€. Attention, les angles sont exprimés en radians.
+
+Voici le calcul de €60€. 
+€179€
+€180€{0.5€432€} 
+€149€
+€228€
+€229€
+
+  €433€ €434€{Décimal vers entier.}
+
+Dans le module €435€{math} il y aussi des fonctions pour arrondir un nombre décimal : 
+  €181€
+    €436€ €437€{round()}€438€{round@€439€{round}} arrondit à l'entier le plus proche : €440€{round(5.6)} renvoie €441€{6}, €442€{round(1.5)} renvoie €443€{2}.
+    €444€ €445€{floor()}€446€{floor@€447€{floor}} renvoie l'entier inférieur ou égal : €448€{floor(5.6)} renvoie €449€{5}.
+    €450€ €451€{ceil()}€452€{ceil@€453€{ceil}} renvoie l'entier supérieur ou égal : €454€{ceil(5.6)} renvoie €455€{6}.
+  €230€       
+    
+€231€
+
+€232€
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activité 3
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€182€[Utiliser des fonctions]
+
+€456€{Objectifs : utiliser des fonctions de €457€{} et du module €458€{math}.}
+
+€183€
+  €459€  La fonction €460€{} pour le pgcd est €461€{gcd(a,b)}€462€{gcd@€463€{gcd}}€464€{pgcd} (sans le €465€{}p€466€{}, pour €467€{greatest common divisor}). Calcule le pgcd de €61€ et €62€. Déduis-en le ppcm€468€{ppcm} de €63€ et €64€. La fonction ppcm n'existe pas, tu dois utiliser la formule :
+  €4€
+  
+  €469€ Trouve par tâtonnement un nombre réel €65€ qui vérifie toutes les conditions suivantes (plusieurs solutions sont possibles) :
+  €184€
+    €470€ €471€{abs(x**2 - 15)} est inférieur à €472€{0.5}
+    €473€ €474€{round(2*x)} renvoie €475€{8}
+    €476€ €477€{floor(3*x)} renvoie €478€{11}
+    €479€ €480€{ceil(4*x)} renvoie €481€{16} 
+  €233€
+ 
+  €482€{Indication.} €483€{abs()}€484€{abs@€485€{abs}}€486€{valeur absolue} désigne la fonction valeur absolue.
+  
+  €487€ Tu connais la formule de trigonométrie 
+  €5€
+  Vérifie que pour €66€ (ou d'autres valeurs) cette formule est numériquement vraie. (Ce n'est pas une preuve de la formule, car €488€{} ne fait que des calculs approchés du sinus et du cosinus).
+€234€  
+€235€
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€185€[Boucle €489€{}pour€490€{}]
+
+€491€{La boucle €492€{}pour€493€{} est la façon la plus simple de répéter des instructions.}
+
+€494€{for@€495€{for}}
+€496€{in@€497€{in}}
+€498€{boucle!pour}
+
+€499€{
+€500€{0.7}{
+  €501€{fig-premiers_pas-boucle-pour}
+} }
+
+
+Note bien que ce qui délimite le bloc d'instructions à répéter, c'est €502€{l'indentation}€503€{indentation}, c'est-à-dire les espaces placées en début de ligne qui décalent les lignes vers la droite.
+Toutes les lignes d'un bloc doivent avoir exactement la même indentation. Dans ce livre, nous choisissons une indentation de €67€ espaces.
+
+N'oublie pas les deux points en fin de la ligne de la déclaration du €504€{for} !
+
+€186€
+  €505€ €506€{Exemple de boucle €507€{}pour€508€{}.}
+
+Voici une boucle qui affiche les premiers carrés. 
+€187€
+€188€{0.5€509€} 
+€150€
+€236€
+€237€ 
+La seconde ligne est décalée et constitue le bloc à répéter.
+La variable €510€{i} prend la valeur €68€ et l'instruction affiche €69€ ;
+puis €511€{i} prend la valeur €70€, et l'instruction affiche €71€ ; puis €72€, €73€€512€
+
+Au final ce programme affiche :
+€6€
+
+Attention : la dernière valeur prise par €513€{i} est bien €74€ (et pas €75€).
+
+  €514€ €515€{Parcourir une liste quelconque.}
+  
+La boucle €516€{}pour€517€{} permet de parcourir n'importe quelle liste. Voici une boucle qui affiche le cube des premiers nombres premiers.
+€189€
+€190€{0.5€518€} 
+€151€
+€238€
+€239€ 
+
+  €519€ €520€{Sommes des entiers.}
+
+Voici un programme qui calcule 
+€7€
+
+€191€
+€192€{0.5€521€} 
+€152€
+€240€
+€241€ 
+
+Comprends bien ce code : une variable €522€{somme} est initialisée à €76€. 
+On va tour à tour lui ajouter €77€, puis €78€, puis €79€€523€{}
+On peut mieux comprendre cette boucle en complétant un tableau :
+  €8€ 
+€242€ 
+
+% pas d'index dans une mybox !!  
+€524€{range@€525€{range}}
+€526€{list@€527€{list}}  
+€528€
+{ 
+ €193€{0.95€529€}
+ €194€
+ €530€ €531€{€532€{range()}.}
+	€195€
+	  €533€ Avec €534€{range(n)} on parcourt les entiers de €80€ à €81€.
+	  Par exemple €535€{range(10)} correspond à la liste €536€{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}. 
+	  
+	  Attention ! la liste s'arrête bien à €82€ et pas à €83€. Ce qu'il faut retenir 
+	  c'est que la liste contient bien €84€ éléments (car elle commence à €85€).
+	  
+	 €537€ Si tu veux afficher la liste des éléments parcourus, il faut utiliser la commande :	 
+	  €538€{€539€{list(range(10))}}
+	
+	€540€ Avec €541€{range(a,b)} on parcourt les éléments de €86€ à €87€.
+	Par exemple  €542€{range(10,20)} correspond à la liste €543€{[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]}.  
+	
+	€544€ Avec €545€{range(a,b,pas)} on parcourt les éléments €88€, €89€, €90€€546€{} Par exemple €547€{range(10,20,2)} correspond à la liste €548€{[10, 12, 14, 16, 18]}.  
+
+	€243€
+€244€
+€245€	
+}
+€196€
+  €549€ €550€{Imbrication de boucles.}
+
+Il est possible d'imbriquer des boucles, c'est-à-dire que dans le bloc d'une boucle, on utilise une nouvelle boucle.
+€197€
+€198€{0.5€551€} 
+€153€
+€246€
+€247€
+Dans ce petit programme €91€ vaut d'abord €92€, €93€ prend la valeur €94€ puis la valeur €95€ (le programme affiche donc €96€, puis €97€). Ensuite €98€, et €99€ vaut de nouveau €100€ puis €101€ (le programme affiche donc ensuite €102€, puis €103€). 
+Au final le programme affiche :
+€9€
+    
+€248€ 
+€249€
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activité 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€199€[Boucle €552€{}pour€553€{}]
+
+€554€{Objectifs : construire des boucles simples.}
+
+€200€
+  €555€ 
+  €201€
+    €556€ Affiche les cubes des entiers de €104€ à €105€.
+    €557€ Affiche les puissances quatrièmes des entiers de €106€ à €107€.
+    €558€ Affiche les racines carrées des entiers €108€, €109€, €110€, €111€,€559€{} jusqu'à €112€.   
+  €250€
+
+  €560€ Affiche les puissances de €113€, de €114€ à €115€, et apprends par c€561€ ur les résultats !
+  
+  
+  €562€ Recherche de façon expérimentale une valeur approchée du minimum de la fonction 
+  €10€
+   sur l'intervalle €116€.
+  
+  €563€{Indications.}
+  €202€
+    €564€ Construis une boucle dans laquelle une variable €117€ balaye les entiers de €118€ à €119€.
+    €565€ Définis €120€. Ainsi €121€, puis €122€, €123€€566€
+    €567€ Calcule €124€.
+    €568€ Affiche les valeurs à l'aide de €569€{print("x =",x,"y =",y)}.
+    €570€ Cherche à la main pour quelle valeur de €125€ on obtient un €126€ le plus petit possible.
+    €571€ N'hésite pas à modifier ton programme pour augmenter la précision.
+  €251€
+    
+  €572€  Cherche une valeur approchée que doit avoir
+  le rayon €127€ d'une boule afin que son volume soit €128€ ?
+  
+  €573€{Indications.} 
+  €203€
+    €574€ Utilise une méthode de balayage comme à la question précédente.
+    €575€ La formule du volume d'une boule est €129€.
+    €576€ Affiche les valeurs à l'aide de €577€{print("R =",R,"V =",V)}.    
+    €578€ Pour €130€ tu peux prendre la valeur approchée €131€ ou bien la valeur approchée €579€{pi} du module €580€{math}.
+  €252€
+  
+€253€  
+€254€
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activité 5
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+€204€[Boucle €581€{}pour€582€{} (suite)]
+
+€583€{Objectifs : construire des boucles plus compliquées.}
+
+€205€
+  €584€ Définis une variable €132€ (par exemple €133€). Calcule la somme
+  €11€
+  
+  €585€ Calcule le produit :
+  €12€
+  
+  €586€{Indications.} Commence par définir une variable €587€{produit} initialisée à la valeur €134€. Utilise €588€{range(a,b,2)} pour obtenir un entier sur deux.
+  
+  €589€ Affiche les tables de multiplication entre €135€ et €136€. Voici un exemple de ligne à afficher :
+  €590€{€591€{7 x 9 = 63}}
+  
+  Utilise une commande d'affichage du style : €592€{print(a,"x",b,"=",a*b)}.
+€255€  
+€256€
+
+€257€
