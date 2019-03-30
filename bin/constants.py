@@ -2,6 +2,8 @@
 # Constants declaration
 ########################
 
+# YOU SHOULD MODIFY THIS FILE
+# USE 'constants_perso' to declare your modifications
 
 # the tag for replacement
 tag = '€'
@@ -12,7 +14,6 @@ tag = '€'
 # Ex. \begin{equation} ... \end{equation} will be replace by a tag
 # Ex. \begin{itemize} ... \end{itemize} is not there and the content will be kept
 
-# DO NOT MODIFY 
 list_env_discard = ['equation',
 					'equation*',
 					'align',
@@ -20,8 +21,8 @@ list_env_discard = ['equation',
 					'lstlisting'
 					]
 
-# Add you personnal environnment their
-list_env_discard_perso = []
+# Add you personnal environnment in 'constants_perso.py'
+
 
 # 2. list of LaTeX command with argument who will be totally will be discard
 
@@ -32,7 +33,10 @@ list_cmd_arg_discard = ['usepackage',
 						'documentclass',
 						'begin',
 						'end',
-						'includegraphics'
+						'includegraphics',
+						'label',
+						'ref',
+						'cite'
 						]
 
-list_cmd_arg_discard_perso = ['ci','mybox','index']
+# Add you personnal commands in 'constants_perso.py'
