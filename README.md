@@ -12,13 +12,13 @@ Machine translation has made huge progress and the text produced is quite good.
 Issue with maths
 ----------------
 
-However automatic translators don't like mathematics and LaTeX file. We provide here a tool to hide mathematics to the machine. 
+However automatic translators don't like mathematics and LaTeX file. We provide here a tool to hide mathematics to the machine so that you can translate any scientific text from one language to another.
 
 
 It works!
 ---------
 
-These tools have been used to translate the book "Python au lycée" to "Python in high school", more than 200 pages, in 15 workdays. See [GitHub Exo7](https://github.com/exo7math).
+These tools have been used to translate the book *Python au lycée* to *Python in high school*, more than 200 pages, in 15 workdays. See [GitHub Exo7](https://github.com/exo7math).
 
 
 
