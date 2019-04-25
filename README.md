@@ -27,7 +27,7 @@ Requirements
 
 * Your original LaTeX file,
 
-* a Python3 installation and all the Python files you will find in the 'bin/' directory, 
+* a Python3 installation and all the Python files you will find in the `bin/` directory, 
 
 * and a translator like [DeepL Translator](https://www.deepl.com/translator) or [Google Translate](https://translate.google.com/).
 
@@ -35,14 +35,14 @@ Requirements
 Operations
 ----------
 
-* Use 'python3 latextotext.py toto.tex' to transform a LaTeX file to a text file 'toto.txt'. You will get an additionnal dictionnary 'toto.dic'.
+* Use `python3 latextotext.py toto.tex` to transform a LaTeX file to a text file `toto.txt`. You will get an additionnal dictionnary `toto.dic`.
 
-* Don't panic if you see lots of tags '€1234€', they replace maths and LaTeX commands!  
+* Don't panic if you see lots of tags `€1234€`, they replace maths and LaTeX commands!  
 
-* Use automatic translation on the text file, I recommend [DeepL Translator](https://www.deepl.com/translator), save the file in your target langage as 'new_toto.txt'
+* Use automatic translation on the text file, I recommend [DeepL Translator](https://www.deepl.com/translator), save the file in your target langage as `new_toto.txt`.
 
-* Recover your LaTeX file with 'python3 texttolatex.py new_toto.txt toto.dic', you will get a
-file 'new_toto.tex' in your target langage with your original maths.
+* Recover your LaTeX file with `python3 texttolatex.py new_toto.txt toto.dic`, you will get a
+file `new_toto.tex` in your target langage with your original maths.
 
 * You certainly need to check and correct the translation.
 
@@ -50,7 +50,7 @@ file 'new_toto.tex' in your target langage with your original maths.
 Example
 -------
 
-1. Start from a file 'maths.tex' written in French:
+1. Start from a file `maths.tex` written in French:
 ```
 	...
 	Soient $f$ et $g$ deux fonctions continues de $\mathbf{R}$ vers $\mathbf{C}$.
@@ -58,16 +58,16 @@ Example
 ```
 
 
-2. Execute 'python3 latextotext.py maths.tex'.
+2. Execute `python3 latextotext.py maths.tex`.
 
-3. You will get a file 'maths.txt':
+3. You will get a file `maths.txt`:
 ```
 	...
 	Soient €0€ et €1€ deux fonctions continues de €2€ vers €3€.
 	...
 ```
 
-4. And a file 'maths.dic':
+4. And a file `maths.dic`:
 ```
 	0: $f$
 	1: $g$
@@ -75,14 +75,14 @@ Example
 	3: $\mathbf{C}$
 ```
 
-5. Translate the file 'maths.txt' to English using DeepL and name the translation 'new_math.txt':
+5. Translate the file `maths.txt` to English using DeepL and name the translation `new_math.txt`:
 ```
 	...
 	Let be €0€ and €1€ two continuous functions from €2€ to €3€.
 	...
 ```
 
-6. Execute 'python3 texttolatex.py new_maths.txt maths.dic' to get a file 'new_maths.tex':
+6. Execute `python3 texttolatex.py new_maths.txt maths.dic` to get a file `new_maths.tex`:
 ```
 	...
 	Let be $f$ and $g$ two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
