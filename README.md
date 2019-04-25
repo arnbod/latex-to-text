@@ -51,9 +51,11 @@ Example
 -------
 
 1. Start from a file 'maths.tex' written in French:
+```
 		...
 		Soient $f$ et $g$ deux fonctions continues de $\mathbf{R}$ vers $\mathbf{C}$.
 		...
+```
 
 
 2. Execute 'python3 latextotext.py maths.tex'.
