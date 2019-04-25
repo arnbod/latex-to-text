@@ -52,36 +52,46 @@ Example
 
 1. Start from a file 'maths.tex' written in French:
 ```
-		...
-		Soient $f$ et $g$ deux fonctions continues de $\mathbf{R}$ vers $\mathbf{C}$.
-		...
+	...
+	Soient $f$ et $g$ deux fonctions continues de $\mathbf{R}$ vers $\mathbf{C}$.
+	...
 ```
 
 
 2. Execute 'python3 latextotext.py maths.tex'.
 
-* You will get a file 'maths.txt':
-		...
-		Soient €0€ et €1€ deux fonctions continues de €2€ vers €3€.
-		...
+3. You will get a file 'maths.txt':
+```
+	...
+	Soient €0€ et €1€ deux fonctions continues de €2€ vers €3€.
+	...
+```
 
-3. And a file 'maths.dic':
-		0: $f$
-		1: $g$
-		2: $\mathbf{R}$
-		3: $\mathbf{C}$
+4. And a file 'maths.dic':
+```
+	0: $f$
+	1: $g$
+	2: $\mathbf{R}$
+	3: $\mathbf{C}$
+```
 
-4. Translate the file 'maths.txt' to English using DeepL and name the translation 'new_math.txt':
-		...
-		Let be €0€ and €1€ two continuous functions from €2€ to €3€.
-		...
+5. Translate the file 'maths.txt' to English using DeepL and name the translation 'new_math.txt':
+```
+	...
+	Let be €0€ and €1€ two continuous functions from €2€ to €3€.
+	...
+```
 
-5. Execute 'python3 texttolatex.py new_maths.txt maths.dic' to get a file 'new_maths.tex':
-		...
-		Let be $f$ and $g$ two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
-		...
+6. Execute 'python3 texttolatex.py new_maths.txt maths.dic' to get a file 'new_maths.tex':
+```
+	...
+	Let be $f$ and $g$ two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
+	...
+```
 
-6. Adjust the translation by hand:
-		...
-		Let $f$ and $g$ be two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
-		...
+7. Adjust the translation by hand:
+```
+	...
+	Let $f$ and $g$ be two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
+	...
+```
