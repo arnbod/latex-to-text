@@ -53,7 +53,7 @@ fic_txt.close()
 
 # Read dictionnary
 fic_dic = open(dic_file, 'r', encoding='utf-8')
-dictionnary = yaml.load(fic_dic)
+dictionnary = yaml.load(fic_dic, Loader=yaml.BaseLoader)
 fic_dic.close()
 
 
