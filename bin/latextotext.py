@@ -14,7 +14,7 @@ import re
 import sys
 import os
 import yaml
-from constants import *    # Definition of the tag symbol and special commands/environnments
+from constants import *    # Definition of the tag symbol and special commands/environments
 from constants_perso import *  # Personal customization
 
 #--------------------------------------------------
@@ -99,13 +99,13 @@ for env in list_env_discard + list_env_discard_perso:
     text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
 
-### PART 3 - Discard contents of some environnments ###
+### PART 3 - Discard contents of some environments ###
 
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
 if remove_comments:
-    text_new = re.sub('%.*','',text_new)
+    text_new = re.sub('%.*\n','',text_new)
 
 ### PART 4 - Replacement of LaTeX commands with their argument ###
 
