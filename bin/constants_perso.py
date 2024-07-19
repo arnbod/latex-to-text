@@ -22,3 +22,7 @@ list_env_discard_perso = []    # like ['equation','align*']
 # Ex. \emph{my text} is not there and the content will be kept
 
 list_cmd_arg_discard_perso = ['ci','mybox']
+
+# 3. whether to remove Latex comments (lines starting by '%')
+
+remove_comments = True

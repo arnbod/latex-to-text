@@ -104,6 +104,8 @@ for env in list_env_discard + list_env_discard_perso:
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
+if remove_comments:
+    text_new = re.sub('%.*','',text_new)
 
 ### PART 4 - Replacement of LaTeX commands with their argument ###
 
