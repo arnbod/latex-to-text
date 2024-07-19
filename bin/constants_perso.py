@@ -7,7 +7,7 @@
 # tag = '€'
 
 
-# 1. list of personal LaTeX environnments whose content will be discarded
+# 1. list of personal LaTeX environments whose content will be discarded
 
 # Ex. \begin{equation} ... \end{equation} will be replaced by a tag
 # Ex. \begin{itemize} ... \end{itemize} is not there and the content will be kept

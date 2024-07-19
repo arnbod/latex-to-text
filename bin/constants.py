@@ -9,7 +9,7 @@
 tag = '€'
 
 
-# 1. list of LaTeX environnments whose content will be discarded
+# 1. list of LaTeX environments whose content will be discarded
 
 # Ex. \begin{equation} ... \end{equation} will be replaced by a tag
 # Ex. \begin{itemize} ... \end{itemize} is not there and the content will be kept
@@ -18,10 +18,12 @@ list_env_discard = ['equation',
 					'equation*',
 					'align',
 					'align*',
+					'multline',
+					'multline*',
 					'lstlisting'
 					]
 
-# Add your personal environnment in 'constants_perso.py'
+# Add your personal environment in 'constants_perso.py'
 
 
 # 2. list of LaTeX commands with arguments which will be totally discarded
@@ -36,6 +38,7 @@ list_cmd_arg_discard = ['usepackage',
 						'includegraphics',
 						'label',
 						'ref',
+						'eqref',
 						'cite'
 						]
 
