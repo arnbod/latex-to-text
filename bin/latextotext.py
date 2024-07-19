@@ -93,6 +93,8 @@ text_new = re.sub(r'\\\[(.+?)\\\]',func_repl,text_new, flags=re.MULTILINE|re.DOT
 ### PART 2 - Replace \begin{env} and \end{env} but not its contents
 
 for env in list_env_discard + list_env_discard_perso:
+    # escape *, e.g. replace r'align*' by r'align\*'
+    env = re.sub(r'\*', r'\*', env)
     str_env = r'\\begin\{' + env + r'\}(.+?)\\end\{' + env + r'\}'
     text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
