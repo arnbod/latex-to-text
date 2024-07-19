@@ -15,13 +15,13 @@ import sys
 import os
 import yaml
 from constants import *    # Definition of the tag symbol and special commands/environnments
-from constants_perso import *  # Personnal customization
+from constants_perso import *  # Personal customization
 
 #--------------------------------------------------
 #--------------------------------------------------
 
 # Arguments 
-parser = argparse.ArgumentParser(description='Conversion a LaTex file to a text file keeping appart commands and maths.')
+parser = argparse.ArgumentParser(description='Conversion a LaTex file to a text file keeping apart commands and maths.')
 parser.add_argument('inputfile', help='input LaTeX filename')
 parser.add_argument('outputfile', nargs='?', help='output text filename')
 parser.add_argument('dicfile', nargs='?', help='output dictionnary filename')
@@ -29,7 +29,7 @@ options = parser.parse_args()
 
 tex_file = options.inputfile
 output_file = options.outputfile
-dictionnary_file = options.dicfile
+dictionary_file = options.dicfile
 
 
 # Get argument: a tex file
@@ -43,9 +43,9 @@ else:
     txt_file = file_name+'.txt' # If no name add a .txt extension
 
 
-# Dictionnary file name 
-if dictionnary_file:
-    dic_file = dictionnary_file    # Name given by user
+# Dictionary file name 
+if dictionary_file:
+    dic_file = dictionary_file    # Name given by user
 else:
     dic_file = file_name+'.dic' # If no name add a .dic extension
 
@@ -99,7 +99,7 @@ for env in list_env_discard + list_env_discard_perso:
     text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
 
-### PART 3 - Discards contents of some environnments ###
+### PART 3 - Discard contents of some environnments ###
 
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Convert a text file + a dicttionnary file to a LaTeX file
+# Convert a text file + a dictionary file to a LaTeX file
 # Usage : 'python3 texttolatex.py toto.txt'
 # or 'python3 texttolatex.py toto.txt toto.dic'
 # or 'python3 texttolatex.py toto.txt toto.dic new_toto.tex'
@@ -19,22 +19,22 @@ from constants import *
 # Arguments 
 parser = argparse.ArgumentParser(description='Conversion a text file to a LaTeX gluing back commands and maths.')
 parser.add_argument('inputfile', help='input text filename')
-parser.add_argument('dicfile', nargs='?', help='input dictionnary filename')
+parser.add_argument('dicfile', nargs='?', help='input dictionary filename')
 parser.add_argument('outputfile', nargs='?', help='output LaTeX filename')
 options = parser.parse_args()
 
 txt_file = options.inputfile
 output_file = options.outputfile
-dictionnary_file = options.dicfile
+dictionary_file = options.dicfile
 
 
 # Get argument: a txt file
 file_name, file_extension = os.path.splitext(txt_file) 
 
 
-# Dictionnary file name 
-if dictionnary_file:
-    dic_file = dictionnary_file    # Name given by user
+# Dictionary file name 
+if dictionary_file:
+    dic_file = dictionary_file    # Name given by user
 else:
     dic_file = file_name+'.dic' # If no name add a .dic extension
 
@@ -51,16 +51,16 @@ text_all = fic_txt.read()
 fic_txt.close()
 
 
-# Read dictionnary
+# Read dictionary
 fic_dic = open(dic_file, 'r', encoding='utf-8')
-dictionnary = yaml.load(fic_dic, Loader=yaml.BaseLoader)
+dictionary = yaml.load(fic_dic, Loader=yaml.BaseLoader)
 fic_dic.close()
 
 
 # Replacements start now
 text_new = text_all
 
-for i,val in dictionnary.items():
+for i,val in dictionary.items():
     tag_str = tag+str(i)+tag
     val = val.replace('\\','\\\\')    # double \\ for correct write
     # val = re.escape(val)
