@@ -25,4 +25,4 @@ list_cmd_arg_discard_perso = ['ci','mybox']
 
 # 3. whether to remove Latex comments (lines starting by '%')
 
-remove_comments = True
+remove_comments = False
