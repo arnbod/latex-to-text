@@ -35,7 +35,7 @@ Requirements
 Operations
 ----------
 
-* Use `python3 latextotext.py toto.tex` to transform a LaTeX file to a text file `toto.txt`. You will get an additionnal dictionnary `toto.dic`.
+* Use `python3 latextotext.py toto.tex` to transform a LaTeX file to a text file `toto.txt`. You will get an additional dictionary `toto.dic`.
 
 * Don't panic if you see lots of tags `€1234€`, they replace maths and LaTeX commands!  
 
