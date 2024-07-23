@@ -78,6 +78,10 @@ def func_repl(m):
 # Now we replace case by case math and commands with tags
 text_new = text_all
 
+if remove_comments:
+    # done first, to prevent accidentally replacing commented Latex code later
+    text_new = re.sub('%.*\n','',text_new)
+
 ### PART 1 - Replacement of maths ###
 
 # $$ ... $$
@@ -103,9 +107,6 @@ for env in list_env_discard + list_env_discard_perso:
 
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
-
-if remove_comments:
-    text_new = re.sub('%.*\n','',text_new)
 
 ### PART 4 - Replacement of LaTeX commands with their argument ###
 
