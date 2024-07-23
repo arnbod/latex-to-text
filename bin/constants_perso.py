@@ -23,6 +23,7 @@ list_env_discard_perso = []    # like ['equation','align*']
 
 list_cmd_arg_discard_perso = ['ci','mybox']
 
-# 3. whether to remove Latex comments (lines starting by '%')
+# 3. whether to remove LaTeX comments (lines starting by '%')
 
 remove_comments = True
+# If set to False, be careful: LaTeX commands inside comments may cause bugs.
