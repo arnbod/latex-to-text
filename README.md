@@ -99,9 +99,11 @@ Example
 Advice if you use ChatGPT for translation
 -----------------------------------------
 
-* The limit size for a message to ChatGPT is 4096 characters.
+* The size limit for a message to ChatGPT-4o is around 16,384 characters.
 
-* You may need to repeat the instructions to ChatGPT in every message, since ChatGPT tends to forget them.
+* You may need to repeat the instructions to ChatGPT often, since ChatGPT tends to forget them.
+
+* You may manage to use ChatGPT to translate LaTeX files without this software. Yet, this software can save characters, thus reduce ChatGPT usage. This can save you time and be more ecological (since ChatGPT consumes a fair amount of energy).
 
 * You can adapt and use the prompt below.
 
