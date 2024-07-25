@@ -81,7 +81,13 @@ text_new = text_all
 if remove_comments:
     # Done first, to prevent accidentally replacing commented Latex code later
     # Replace %LINE but not \%
-    text_new = re.sub(r'(?<!\\)%.*\n','',text_new)
+    text_new = re.sub(r'(?<!\\)%.*(\n)?','',text_new)
+    # text_new = re.sub(r'(?<!\\)%.*(\n)?',func_repl,text_new)
+
+# Replace LaTeX newlines with optional argument, e.g. r'\\[-0.2cm]'
+text_new = re.sub(r'\\\\\[.*\]',func_repl,text_new)
+# Done here to avoid a bug below when replacing r'\[ ... \]'
+
 
 ### PART 1 - Replacement of maths ###
 
@@ -108,6 +114,7 @@ for env in list_env_discard + list_env_discard_perso:
 
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
+
 
 ### PART 4 - Replacement of LaTeX commands with their argument ###
 
