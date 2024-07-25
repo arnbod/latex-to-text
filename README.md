@@ -113,10 +113,10 @@ So, DO NOT add missing punctuation after a tag.
 Your output will be encapsulated in blockquote markdown (```like this```).
 Consider using the following dictionary, in the format "{original: correct translation}", updated from your previous mistranslations.
 {
-    partie: subset
-    Abélien: Abelian
-    application: map
-    noté: denoted by
+partie: subset
+Abélien: Abelian
+application: map
+noté: denoted by
 }
 ##
 ```
