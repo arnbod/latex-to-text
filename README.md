@@ -95,3 +95,32 @@ Example
 	Let $f$ and $g$ be two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
 	...
 ```
+
+Advice if you use ChatGPT for translation
+-----------------------------------------
+
+* The limit size for a message to ChatGPT is 4096 characters.
+
+* You may need to repeat the instructions to ChatGPT in every message, since ChatGPT tends to forget them.
+
+* You can adapt and use the prompt below.
+
+````
+Translate from French to English extracts from my article about mathematics.
+Do not replace the patterns €number€. They are tags standing for LaTeX code.
+When punctuation seems missing after a tag, it's probably part of what the tag stands for.
+So, DO NOT add missing punctuation after a tag.
+Your output will be encapsulated in blockquote markdown (```like this```).
+Consider using the following dictionary, in the format "{original: correct translation}", updated from your previous mistranslations.
+{
+partie: subset
+Abélien: Abelian
+application: map
+noté: denoted by
+}
+##
+```
+Text to translate.
+```
+````
+
