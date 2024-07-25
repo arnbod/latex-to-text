@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # Run the Python scripts on examples.
 # Usage: Run '../bin/test.sh' from the examples directory.
@@ -17,7 +17,7 @@ do
     printf '\n\n\n'
     echo "### Differences for test ${j}:"
     diff "test-0${j}.tex" "test-new-0${j}.tex"
-    echo '### Press [enter] to go on.'
+    echo '### Press [enter].'
     read
     j="$(( j + 1 ))"
 done
