@@ -78,11 +78,9 @@ def func_repl(m):
 # Now we replace case by case math and commands with tags
 text_new = text_all
 
-if remove_comments:
-    # Done first, to prevent accidentally replacing commented Latex code later
-    # Replace %LINE but not \%
-    text_new = re.sub(r'(?<!\\)%.*(\n)?','',text_new)
-    # text_new = re.sub(r'(?<!\\)%.*(\n)?',func_repl,text_new)
+# Done first, to prevent accidentally replacing commented Latex code later
+# Replace %LINE but not \%
+text_new = re.sub(r'(?<!\\)%.*(\n)?',func_repl,text_new)
 
 # Replace LaTeX newlines with optional argument, e.g. r'\\[-0.2cm]'
 text_new = re.sub(r'\\\\\[.*\]',func_repl,text_new)
