@@ -99,9 +99,11 @@ Example
 Advice if you use ChatGPT for translation
 -----------------------------------------
 
-The limit size for a message to ChatGPT is 4096 characters.
-You may need to repeat the instructions anytime ChatGPT forgets them.
-You can adapt and use the prompt below.
+* The limit size for a message to ChatGPT is 4096 characters.
+
+* You may need to repeat the instructions to ChatGPT in every message, since ChatGPT tends to forget them.
+
+* You can adapt and use the prompt below.
 
 ````
 Translate from French to English extracts from my article about mathematics.
