@@ -99,7 +99,7 @@ Example
 Advice if you use ChatGPT for translation
 -----------------------------------------
 
-* The size limit for a message to ChatGPT-4o is around 8000 characters. Above the limit, ChatGPT-4o may hallucinate convincingly.
+* The size limit for a message to ChatGPT-4o is around 8000 characters. Above the limit, ChatGPT-4o usually hallucinates. Below the limit, ChatGPT-4o can still occasionally hallucinate, replacing a tag with another: you should check your translated pdf carefully!
 
 * You may need to repeat the instructions to ChatGPT in every message, since ChatGPT's memory is around 8000 characters.
 
