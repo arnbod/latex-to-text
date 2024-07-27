@@ -80,7 +80,7 @@ text_new = text_all
 
 # Done first, to prevent accidentally replacing commented Latex code later
 # Replace %LINE but not \%
-text_new = re.sub(r'(?<!\\)%.*(\n)?',func_repl,text_new)
+text_new = re.sub(r'(?<!\\)%.*',func_repl,text_new)
 
 # Replace LaTeX newlines with optional argument, e.g. r'\\[-0.2cm]'
 text_new = re.sub(r'\\\\\[.*\]',func_repl,text_new)
