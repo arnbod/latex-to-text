@@ -63,17 +63,19 @@ text_new = text_all
 
 # Iterate replacing until nothing remains to be replaced
 # (to deal with nested replacements)
-text1 = ''
+keep_replacing = True
 k = 0
-while text_new != text1:
-    text1 = text_new
+while keep_replacing:
+    keep_replacing = False
     for i,val in dictionary.items():
         tag_str = tag+str(i)+tag
         val = val.replace('\\','\\\\')    # double \\ for correct write
         # val = re.escape(val)
-        text_new = re.sub(tag_str,val,text_new, flags=re.MULTILINE|re.DOTALL)
+        (text_new, number_of_subs_made) = re.subn(tag_str,val,text_new, flags=re.MULTILINE|re.DOTALL)
+        if number_of_subs_made > 0:
+            keep_replacing = True
     k += 1
-# print(f'{k} iteration(s) done.')
+print(f'{k} iteration(s) done.')
 
 # Write the result
 with open(tex_file, 'w', encoding='utf-8') as fic_tex:
