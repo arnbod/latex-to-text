@@ -75,7 +75,7 @@ while keep_replacing:
         if number_of_subs_made > 0:
             keep_replacing = True
     k += 1
-print(f'{k} iteration(s) done.')
+# print(f'{k} iteration(s) done.')
 
 # Write the result
 with open(tex_file, 'w', encoding='utf-8') as fic_tex:
