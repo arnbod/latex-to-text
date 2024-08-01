@@ -12,6 +12,7 @@ import sys
 import os
 import yaml
 from constants import *
+from constants_perso import *  # Personal customization
 
 #--------------------------------------------------
 #--------------------------------------------------
@@ -60,12 +61,21 @@ fic_dic.close()
 # Replacements start now
 text_new = text_all
 
-for i,val in dictionary.items():
-    tag_str = tag+str(i)+tag
-    val = val.replace('\\','\\\\')    # double \\ for correct write
-    # val = re.escape(val)
-    text_new = re.sub(tag_str,val,text_new, flags=re.MULTILINE|re.DOTALL)
-
+# Iterate replacing until nothing remains to be replaced
+# (to deal with nested replacements)
+keep_replacing = True
+k = 0
+while keep_replacing:
+    keep_replacing = False
+    for i,val in dictionary.items():
+        tag_str = tag+str(i)+tag
+        val = val.replace('\\','\\\\')    # double \\ for correct write
+        # val = re.escape(val)
+        (text_new, number_of_subs_made) = re.subn(tag_str,val,text_new, flags=re.MULTILINE|re.DOTALL)
+        if number_of_subs_made > 0:
+            keep_replacing = True
+    k += 1
+# print(f'{k} iteration(s) done.')
 
 # Write the result
 with open(tex_file, 'w', encoding='utf-8') as fic_tex:

@@ -54,3 +54,5 @@
 *test*.tex
 #vim
 *~
+__pycache__
+.DS_Store

@@ -35,7 +35,7 @@ Requirements
 Operations
 ----------
 
-* Use `python3 latextotext.py toto.tex` to transform a LaTeX file to a text file `toto.txt`. You will get an additionnal dictionnary `toto.dic`.
+* Use `python3 latextotext.py toto.tex` to transform a LaTeX file to a text file `toto.txt`. You will get an additional dictionary `toto.dic`.
 
 * Don't panic if you see lots of tags `€1234€`, they replace maths and LaTeX commands!  
 
@@ -95,3 +95,34 @@ Example
 	Let $f$ and $g$ be two continuous functions from $\mathbf{R}$ to $\mathbf{C}$.
 	...
 ```
+
+Advice if you use ChatGPT for translation
+-----------------------------------------
+
+* The size limit for a message to ChatGPT-4o seems around 6500-8500 characters. Above the limit, ChatGPT-4o usually hallucinates or freezes. Below the limit, ChatGPT-4o can still occasionally hallucinate, replacing a tag with another tag: you should check your translated pdf carefully!
+
+* You may need to repeat the instructions to ChatGPT in every message, since ChatGPT's memory seems around 8000 characters.
+
+* You may manage to use ChatGPT to translate LaTeX files without this software. Yet, this software can save characters, thus reduce ChatGPT usage. This can save you time and be more ecological (since ChatGPT consumes a fair amount of energy).
+
+* You can adapt and use the prompt below.
+
+````
+Translate from French to English extracts from my article about mathematics.
+Do not replace the patterns €number€. They are tags standing for LaTeX code.
+When punctuation seems missing after a tag, it's probably part of what the tag stands for.
+So, DO NOT add missing punctuation after a tag.
+Your output will be encapsulated in blockquote markdown (```like this```).
+Consider using the following dictionary, in the format "{original:correct translation}", updated from your previous mistranslations.
+{
+partie:subset
+Abélien:Abelian
+application:map
+noté:denoted by
+}
+##
+```
+Text to translate.
+```
+````
+

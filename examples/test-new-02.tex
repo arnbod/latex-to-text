@@ -12,7 +12,7 @@ Voici quelques instructions.
   \item \textbf{Addition.} \ci{5+7}.
   \item \textbf{Multiplication.} 
   \ci{6*7} ; avec des parenthèses \ci{3*(12+5)} ; avec des nombres à virgule \ci{3*1.5}.
-  \item \textbf{Puissance.}\index{puissance}\index{**@€260€} \ci{3**2} pour $3^2=9$ ; puissance négative \ci{10**-3} pour $10^{-3} = 0.001$.
+  \item \textbf{Puissance.}\index{puissance}\index{**@\ci{**}} \ci{3**2} pour $3^2=9$ ; puissance négative \ci{10**-3} pour $10^{-3} = 0.001$.
   \item \textbf{Division réelle.} \ci{14/4} vaut \ci{3.5} ; \ci{1/3} vaut \ci{0.3333333333333333}.
   \item \textbf{Division entière\index{division euclidienne} et modulo\index{modulo}\index{reste}.}
   \begin{itemize}
@@ -63,7 +63,7 @@ Voici quelques instructions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{cours}[Travailler avec un éditeur]
-À partir de maintenant, il est préférable que tu travailles dans un éditeur de texte dédié à \Python. Tu dois alors explicitement demander d'afficher\index{print@€271€} le résultat :
+À partir de maintenant, il est préférable que tu travailles dans un éditeur de texte dédié à \Python. Tu dois alors explicitement demander d'afficher\index{print@\ci{print}} le résultat :
 \begin{lstlisting}
 print(2+2)
 print("Bonjour le monde !")
@@ -82,7 +82,7 @@ print("Bonjour le monde !")
 
 \textbf{Variable.} 
 Une \defi{variable}\index{variable} est un nom associé à un emplacement de la mémoire. C'est comme une boîte que l'on identifie par une étiquette.
-La commande \og{}\ci{a = 3}\fg{}\index{=@€274€}\index{affectation} signifie que j'ai une variable \og{}\ci{a}\fg{} associée à la valeur $3$. 
+La commande \og{}\ci{a = 3}\fg{}\index{=@\ci{=}}\index{affectation} signifie que j'ai une variable \og{}\ci{a}\fg{} associée à la valeur $3$. 
 
 Voici un premier exemple :
 \begin{lstlisting}
@@ -238,7 +238,7 @@ print(chaine)
 
   \item \textbf{Le module \ci{math}.}
 
-	Toutes les fonctions ne sont pas directement accessibles. Elles sont souvent regroupées dans des \defi{modules}\index{module}. Par exemple le module \ci{math}\index{math@€303€}\index{module!math@€304€} contient les fonctions mathématiques. Tu y trouves par exemple la fonction racine carrée \ci{sqrt()}\index{sqrt@€306€}\index{racine carree@racine carrée} (\emph{square root}). Voici comment l'utiliser : 
+	Toutes les fonctions ne sont pas directement accessibles. Elles sont souvent regroupées dans des \defi{modules}\index{module}. Par exemple le module \ci{math}\index{math@\ci{math}}\index{module!math@\ci{math}} contient les fonctions mathématiques. Tu y trouves par exemple la fonction racine carrée \ci{sqrt()}\index{sqrt@\ci{sqrt}}\index{racine carree@racine carrée} (\emph{square root}). Voici comment l'utiliser : 
 \begin{center}
 \begin{minipage}{0.5\textwidth}
 \begin{lstlisting} 
@@ -252,10 +252,10 @@ print(x**2)
 
 \end{center} 	
 
-La première ligne importe toutes les fonctions du module \ci{math}\index{import@€308€}, la seconde calcule $x = \sqrt{2}$ (en valeur approchée) et ensuite on affiche $x$ et $x^2$.	
+La première ligne importe toutes les fonctions du module \ci{math}\index{import@\ci{import}}, la seconde calcule $x = \sqrt{2}$ (en valeur approchée) et ensuite on affiche $x$ et $x^2$.	
   \item \textbf{Sinus et cosinus.} 
   
-  Le module \ci{math} contient les fonctions trigonométriques sinus\index{sin@€310€} et cosinus\index{cos@€311€} et même la constante \ci{pi}\index{pi@€313€}\index{€58€} qui est une valeur approchée de $\pi$. Attention, les angles sont exprimés en radians.
+  Le module \ci{math} contient les fonctions trigonométriques sinus\index{sin@\ci{sin}} et cosinus\index{cos@\ci{cos}} et même la constante \ci{pi}\index{pi@\ci{pi}}\index{$\pi$} qui est une valeur approchée de $\pi$. Attention, les angles sont exprimés en radians.
 
 Voici le calcul de $\sin(\frac\pi2)$. 
 \begin{center}
@@ -272,9 +272,9 @@ print(sin(angle))
 
 Dans le module \ci{math} il y aussi des fonctions pour arrondir un nombre décimal : 
   \begin{itemize}
-    \item \ci{round()}\index{round@€316€} arrondit à l'entier le plus proche : \ci{round(5.6)} renvoie \ci{6}, \ci{round(1.5)} renvoie \ci{2}.
-    \item \ci{floor()}\index{floor@€322€} renvoie l'entier inférieur ou égal : \ci{floor(5.6)} renvoie \ci{5}.
-    \item \ci{ceil()}\index{ceil@€326€} renvoie l'entier supérieur ou égal : \ci{ceil(5.6)} renvoie \ci{6}.
+    \item \ci{round()}\index{round@\ci{round}} arrondit à l'entier le plus proche : \ci{round(5.6)} renvoie \ci{6}, \ci{round(1.5)} renvoie \ci{2}.
+    \item \ci{floor()}\index{floor@\ci{floor}} renvoie l'entier inférieur ou égal : \ci{floor(5.6)} renvoie \ci{5}.
+    \item \ci{ceil()}\index{ceil@\ci{ceil}} renvoie l'entier supérieur ou égal : \ci{ceil(5.6)} renvoie \ci{6}.
   \end{itemize}       
     
 \end{itemize}
@@ -290,7 +290,7 @@ Dans le module \ci{math} il y aussi des fonctions pour arrondir un nombre décim
 \objectifs{Objectifs : utiliser des fonctions de \Python{} et du module \ci{math}.}
 
 \begin{enumerate}
-  \item  La fonction \Python{} pour le pgcd est \ci{gcd(a,b)}\index{gcd@€331€}\index{pgcd} (sans le \og{}p\fg{}, pour \emph{greatest common divisor}). Calcule le pgcd de $a = 10\,403$ et $b = 10\,506$. Déduis-en le ppcm\index{ppcm} de $a$ et $b$. La fonction ppcm n'existe pas, tu dois utiliser la formule :
+  \item  La fonction \Python{} pour le pgcd est \ci{gcd(a,b)}\index{gcd@\ci{gcd}}\index{pgcd} (sans le \og{}p\fg{}, pour \emph{greatest common divisor}). Calcule le pgcd de $a = 10\,403$ et $b = 10\,506$. Déduis-en le ppcm\index{ppcm} de $a$ et $b$. La fonction ppcm n'existe pas, tu dois utiliser la formule :
   $$\text{ppcm}(a,b) = \frac{a \times b}{\text{pgcd}(a,b)}.$$
   
   \item Trouve par tâtonnement un nombre réel $x$ qui vérifie toutes les conditions suivantes (plusieurs solutions sont possibles) :
@@ -301,7 +301,7 @@ Dans le module \ci{math} il y aussi des fonctions pour arrondir un nombre décim
     \item \ci{ceil(4*x)} renvoie \ci{16} 
   \end{itemize}
  
-  \emph{Indication.} \ci{abs()}\index{abs@€341€}\index{valeur absolue} désigne la fonction valeur absolue.
+  \emph{Indication.} \ci{abs()}\index{abs@\ci{abs}}\index{valeur absolue} désigne la fonction valeur absolue.
   
   \item Tu connais la formule de trigonométrie 
   $$\cos^2 \theta + \sin^2 \theta = 1.$$
@@ -316,8 +316,8 @@ Dans le module \ci{math} il y aussi des fonctions pour arrondir un nombre décim
 
 \objectifs{La boucle \og{}pour\fg{} est la façon la plus simple de répéter des instructions.}
 
-\index{for@€342€}
-\index{in@€343€}
+\index{for@\ci{for}}
+\index{in@\ci{in}}
 \index{boucle!pour}
 
 \mybox{
@@ -406,8 +406,8 @@ On peut mieux comprendre cette boucle en complétant un tableau :
 \end{itemize} 
 
 % pas d'index dans une mybox !!  
-\index{range@€349€}
-\index{list@€350€}  
+\index{range@\ci{range}}
+\index{list@\ci{list}}  
 \mybox
 { 
  \begin{minipage}{0.95\textwidth}
